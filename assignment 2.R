@@ -12,3 +12,5 @@ myMean(assignment2)
 myMean <- function(assignment2) { return(sum(assignment2)/length(assignment2)) }
 myMean(assignment2) # Returns mean of "assignment2"
 [1] 19.25
+   # I also think the use of function() and return() are not necessary to produce
+   # the mean, simply sum()/length() would suffice.
