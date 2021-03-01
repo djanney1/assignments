@@ -10,3 +10,7 @@ A2 <- matrix(sample(A),nrow=10)
 A3 <- matrix(A2,nrow=10)
 # transpose matrix A3
 t(A3)
+# find determinate of matrix
+det(A3)
+# find inverse of matrix
+solve(A3)
