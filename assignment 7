@@ -1,0 +1,22 @@
+# looking at S3 and S4 class objects
+# select a dataset from R datasets
+# I chose "airquality"
+# check object type (base, S3, or S4)
+otype(airquality)
+# double check it is S4 or not
+isS4(airquality)
+# check types of objects it stores
+mode(airquality)
+# apply generic functions to "airquality"
+summary(airquality)
+plot(airquality)
+# create S4 class before creating an S4 object
+myself <- setClass("myself", slots=list(age="numeric",eyecolor="character",zodiac="character"))
+# create S4 object
+Danielle <- new("myself",age=31,eyecolor="brown",zodiac="Scorpio")
+# test the slots
+Danielle@age
+Danielle@eyecolor
+Danielle@zodiac
+# note the difference of using @ for S4 and $ for S3
+airquality$Wind
