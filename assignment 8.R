@@ -1,8 +1,9 @@
+# import data
 "Assignment 6 Dataset.txt"
+# rename data to relfect current assignment number
 # install/select plyr package
 install.packages("plyr")
 library(plyr)
-# import data
 # get average grade by sex
 StudentGradeAverage = ddply(Assignment.8.Dataset,"Sex",transform,Grade.Average=mean(Grade))
 # get average age by sex
